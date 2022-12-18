@@ -18,4 +18,10 @@ router.get('/', (req, res) => {
     res.render('places/index', { places })
 })
 
+router.post('/two', (req, res) => {
+
+    console.log(req.body)
+    res.send("hello two")
+})
+
 module.exports = router
